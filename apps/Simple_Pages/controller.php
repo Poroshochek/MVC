@@ -1,9 +1,15 @@
 <?php
 
-class SimplePagesController extends JaksonController
+class Simple_PagesController extends JaksonController
 {
-    public function Main($args)
+    public function MainPage($args)
     {
+        echo 'Hello!';
+    }
 
+    public function ViewPage($args)
+    {
+        echo '<pre>';
+        print_r($args);
     }
 }
